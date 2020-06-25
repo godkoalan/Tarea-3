@@ -50,7 +50,6 @@ mediante dos ciclos anidados.
 
 ![formula](https://render.githubusercontent.com/render/math?math=R_{XY}=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\frac{xy}{(\sqrt{2\pi})^2\sigma_x\sigma_y}e^{-\frac{(x-\mu_x)^2}{2\sigma_x^2}-\frac{(y-\mu_y)^2}{2\sigma_y^2}}dydx)
 
-![formula](https://render.githubusercontent.com/render/math?math=R_{XY}=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\frac{x}{(\sqrt{2\pi})\sigma_x}e^{-\frac{(x-\mu_x)^2}{2\sigma_x^2}}\frac{y}{(\sqrt{2\pi})\sigma_y}e^{-\frac{(y-\mu_y)^2}{2\sigma_y^2}}dydx)
-
+![formula](https://render.githubusercontent.com/render/math?math=R_{X,Y}=\frac{x}{\sqrt{2\pi}\sigma_x}e^{-\frac{(x-\mu_x)^2}{2\sigma_x^2}}\cdot\frac{y}{\sqrt{2\pi}\sigma_y}e^{-\frac{(y-\mu_y)^2}{2\sigma_y^2}})
 
 
