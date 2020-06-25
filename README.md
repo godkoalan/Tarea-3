@@ -46,11 +46,11 @@ mediante dos ciclos anidados.
 
 ![formula](https://render.githubusercontent.com/render/math?math=R_{XY}=149.19466184953106)
 
-&nbsp;&nbsp;&nbsp;&nbsp; Ahora, analizando la ecuación planteada para el cálculo de la correlación se tendria que:
+&nbsp;&nbsp;&nbsp;&nbsp; Ahora, analizando la ecuación planteada para el cálculo de la correlación, es posible reacomodar la ecuación como sigue:
 
-![formula](https://render.githubusercontent.com/render/math?math=R_{XY}=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\frac{xy}{\sqrt{2\pi}^2\sigma_x\sigma_y}e^{-\frac{(x-\mu_x)^2}{2\sigma_x^2}-\frac{(y-\mu_y)^2}{2\sigma_y^2}}dydx)
+![formula](https://render.githubusercontent.com/render/math?math=R_{XY}=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\frac{xy}{(\sqrt{2\pi})^2\sigma_x\sigma_y}e^{-\frac{(x-\mu_x)^2}{2\sigma_x^2}-\frac{(y-\mu_y)^2}{2\sigma_y^2}}dydx)
 
-
+&rarr; ![formula](https://render.githubusercontent.com/render/math?math=R_{XY}=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\frac{x}{(\sqrt{2\pi})^2\sigma_x\sigma_y}e^{-\frac{(x-\mu_x)^2}{2\sigma_x^2}}e^{-\frac{(y-\mu_y)^2}{2\sigma_y^2}}dydx)
 
 
 
