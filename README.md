@@ -68,7 +68,7 @@ respectivamente.
 
 ![formula](https://render.githubusercontent.com/render/math?math=C_{X,Y}=R_{XY}-\mu_x\cdot\\mu_y)
 
-Esta operación se realiza en **Python**, utilizando los valores de cada variable encontrados anteriormente, obteniendo:
+&nbsp;&nbsp;&nbsp;&nbsp; Esta operación se realiza en **Python**, utilizando los valores de cada variable encontrados anteriormente, obteniendo:
 
 ![formula](https://render.githubusercontent.com/render/math?math=C_{X,Y}=-0.16504309792316008)
 
@@ -76,10 +76,30 @@ Esta operación se realiza en **Python**, utilizando los valores de cada variabl
 
 siendo éstos valore bastante cercanos al 0 ideal plantenado de acuerdo a la naturaleza no correlativa de las variables aleatorias analizadas. Este error puede deberse a errores decimales en los cálculos realizados mediente **Python**, que incluso pueden ser arrastrados desde el cálculo de los parámetros de las funciones de densidad marginales en el inciso a), afectando el resultado final de este inciso. 
 
+#### Inciso d):
+
+A continuación se mostrarán las gráficas obtenidas durante la realización de de la tarea. 
+
+- Datos marginales de X:
+
+![image](https://user-images.githubusercontent.com/66042916/85786838-e130e500-b6e7-11ea-8a76-723e18b2d816.png)
 
 
+- Datos marginales de Y:
 
+![image](https://user-images.githubusercontent.com/66042916/85786735-c494ad00-b6e7-11ea-9204-e5035d38333c.png)
 
+- Curva de ajuste para la función de densidad marginal de X:
+
+![image](https://user-images.githubusercontent.com/66042916/85786880-ec841080-b6e7-11ea-9b79-c86d7caf61ca.png)
+
+- Curva de ajuste para la función de densidad marginal de Y:
+
+![image](https://user-images.githubusercontent.com/66042916/85786941-fc9bf000-b6e7-11ea-9553-983a5dd941d0.png)
+
+- Función de probabilidad conjunta:
+
+![image](https://user-images.githubusercontent.com/66042916/85786998-10475680-b6e8-11ea-9de7-fdc407e4429f.png)
 
 
 
