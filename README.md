@@ -37,13 +37,18 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp; Para calcular la correlación, se definió una función llamada *correlacion*, la cual recibe un dominio *x*, un ámbito *y*, dos medias ![formula](https://render.githubusercontent.com/render/math?math=\mu_x,\mu_y), y dos desviaciones estándar ![formula](https://render.githubusercontent.com/render/math?math=\sigma_x,\sigma_y). Esta función se encarga de calcular la integral
 
-![formula](https://render.githubusercontent.com/render/math?math=f_{X,Y}(x,y)=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\frac{xy}{2\pi\sigma_x\sigma_y}e^{-\frac{(x-\mu_x)^2}{2\sigma_x^2}-\frac{(y-\mu_y)^2}{2\sigma_y^2}}dydx)
+![formula](https://render.githubusercontent.com/render/math?math=R_{XY}=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\frac{xy}{2\pi\sigma_x\sigma_y}e^{-\frac{(x-\mu_x)^2}{2\sigma_x^2}-\frac{(y-\mu_y)^2}{2\sigma_y^2}}dydx)
 
 mediante dos ciclos anidados.
 
+&nbsp;&nbsp;&nbsp;&nbsp; Para un dominio de 0 a 1000, un ámbito de 0 a 1000, y los valores de ![formula](https://render.githubusercontent.com/render/math?math=\mu_x,\sigma_x,\mu_y) y ![formula](https://render.githubusercontent.com/render/math?math=\sigma_y) obtenidos en el inciso a), se obtiene que:
 
 
+![formula](https://render.githubusercontent.com/render/math?math=R_{XY}=149.19466184953106)
 
+&nbsp;&nbsp;&nbsp;&nbsp; Ahora, analizando la ecuación planteada para el cálculo de la correlación se tendria que:
+
+![formula](https://render.githubusercontent.com/render/math?math=R_{XY}=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\frac{xy}{\sqrt{2\pi}^2\sigma_x\sigma_y}e^{-\frac{(x-\mu_x)^2}{2\sigma_x^2}-\frac{(y-\mu_y)^2}{2\sigma_y^2}}dydx)
 
 
 
