@@ -1,7 +1,7 @@
-#### Modelos probabilísticos de Señales y Sistemas - IE0405
-#### Tarea 3
-#### Alan Umaña Castillo
-#### B77773
+## Modelos probabilísticos de Señales y Sistemas - IE0405
+### Tarea 3
+### Alan Umaña Castillo
+### B77773
 
 #### Inciso a):
 
@@ -9,7 +9,7 @@ Inicialmente, mediante **Pandas** se lee el archivo *xy.csv* y se crea un DataFr
 
 Estos arrays son graficados en forma de histograma para determinar la forma de la función de distribución que modela los datos. De dichos histogramas, se observa que ambas distribuciones son similares a la distribución Gaussiana o normal.
 
-Una vez hecho esto, se define una función llamada *gaussian*, la cual recibe un dominio *x*, la media y la desviación estándar de un conjunto de datos, y devuelve el valor de probabilidad de acuerdo a lo recibido en el argumento de la función. Ahora, mediante los arrays *xmarginal* y *ymarginal*, y la función anteriormente definida, se utiliza el método *optimize.curve_fit*, para obtener los parámetros de la función marginal (![formula](https://render.githubusercontent.com/render/math?math=\mu_x,\sigma_x,\mu_y,\sigma_y)) de cada variable aleatoria. Este proceso arroja los siguiente resultados:
+Una vez hecho esto, se define una función llamada *gaussian*, la cual recibe un dominio *x*, la media y la desviación estándar de un conjunto de datos, y devuelve el valor de probabilidad de acuerdo a lo recibido en el argumento de la función. Ahora, mediante los arrays *xmarginal* y *ymarginal*, y la función anteriormente definida, se utiliza el método *optimize.curve_fit*, para obtener los parámetros de la función marginal (![formula](https://render.githubusercontent.com/render/math?math=\mu_x,\sigma_x,\mu_y,\sigma_y)) de cada variable aleatoria en el intervalo en el que se dan los datos. Este proceso arroja los siguiente resultados:
 
 ![formula](https://render.githubusercontent.com/render/math?math=\mu_x=9.904843809352778)
 
@@ -32,4 +32,16 @@ Dado que se tienen funciones de densidad de probabilidad normales tanto para X c
 Simplificando:
 
 ![formula](https://render.githubusercontent.com/render/math?math=f_{X,Y}(x,y)=\frac{1}{2\pi\sigma_x\sigma_y}e^{-\frac{(x-\mu_x)^2}{2\sigma_x^2}-\frac{(y-\mu_y)^2}{2\sigma_y^2}})
+
+##### Inciso c):
+
+Para calcular la correlación, se definió una función llamada *correlacion*, la cual recibe un dominio *x*, un ámbito *y*, dos medias ![formula](https://render.githubusercontent.com/render/math?math=\mu_x,\mu_y), y dos desviaciones estándar ![formula](https://render.githubusercontent.com/render/math?math=\sigma_x,\sigma_y). Esta función
+
+
+
+
+
+
+
+
 
