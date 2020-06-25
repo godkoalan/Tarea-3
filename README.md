@@ -52,4 +52,47 @@ mediante dos ciclos anidados.
 
 ![formula](https://render.githubusercontent.com/render/math?math=R_{X,Y}=\frac{x}{\sqrt{2\pi}\sigma_x}e^{-\frac{(x-\mu_x)^2}{2\sigma_x^2}}\cdot\frac{y}{\sqrt{2\pi}\sigma_y}e^{-\frac{(y-\mu_y)^2}{2\sigma_y^2}})
 
+![formula](https://render.githubusercontent.com/render/math?math=R_{X,Y}=E[X]\cdot\E[Y])
+
+por lo que se afirma que las variables aleatorias *X* y *Y* **no** están correlacionadas, esperando valores de covarianza y coeficiente de correlación cercanos a 0, ó 0 en el caso ideal. 
+
+&nbsp;&nbsp;&nbsp;&nbsp; Ahora, para la covarianza y el coeficiente de correlación, se tiene que están definidos por:
+
+![formula](https://render.githubusercontent.com/render/math?math=C_{X,Y}=R_{XY}-E[X]\cdot\E[Y])
+
+![formula](https://render.githubusercontent.com/render/math?math=\rho=\frac{C_{XY}}{\sigma_x\xcdot\sigma_y})
+
+respectivamente. 
+
+&nbsp;&nbsp;&nbsp;&nbsp; Además, se sabe que ![formula](https://render.githubusercontent.com/render/math?math=E[X]=\mu_x) y ![formula](https://render.githubusercontent.com/render/math?math=E[Y]=\mu_y), es posible reescribir la ecuación planteada inicialmente para la covarianza, teniendo:
+
+![formula](https://render.githubusercontent.com/render/math?math=C_{X,Y}=R_{XY}-\mu_x\cdot\\mu_y)
+
+Esta operación se realiza en **Python**, utilizando los valores de cada variable encontrados anteriormente, obteniendo:
+
+![formula](https://render.githubusercontent.com/render/math?math=C_{X,Y}=-0.16504309792316008)
+
+![formula](https://render.githubusercontent.com/render/math?math=\rho=-0.008299655130846177)
+
+siendo éstos valore bastante cercanos al 0 ideal plantenado de acuerdo a la naturaleza no correlativa de las variables aleatorias analizadas. Este error puede deberse a errores decimales en los cálculos realizados mediente **Python**, que incluso pueden ser arrastrados desde el cálculo de los parámetros de las funciones de densidad marginales en el inciso a), afectando el resultado final de este inciso. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
