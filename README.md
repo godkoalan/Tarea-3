@@ -35,7 +35,7 @@
 
 #### Inciso c):
 
-&nbsp;&nbsp;&nbsp;&nbsp; Para calcular la correlación, se definió una función llamada *correlacion*, la cual recibe un dominio *x*, un ámbito *y*, dos medias ![formula](https://render.githubusercontent.com/render/math?math=\mu_x,\mu_y), y dos desviaciones estándar ![formula](https://render.githubusercontent.com/render/math?math=\sigma_x,\sigma_y). Esta función se encarga de calcular la integral
+&nbsp;&nbsp;&nbsp;&nbsp; Para calcular la correlación, se definió en **Python** una función llamada *correlacion*, la cual recibe un dominio *x*, un ámbito *y*, dos medias ![formula](https://render.githubusercontent.com/render/math?math=\mu_x,\mu_y), y dos desviaciones estándar ![formula](https://render.githubusercontent.com/render/math?math=\sigma_x,\sigma_y). Esta función se encarga de calcular la integral
 
 ![formula](https://render.githubusercontent.com/render/math?math=R_{XY}=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\frac{xy}{2\pi\sigma_x\sigma_y}e^{-\frac{(x-\mu_x)^2}{2\sigma_x^2}-\frac{(y-\mu_y)^2}{2\sigma_y^2}}dydx)
 
@@ -60,13 +60,13 @@ por lo que se afirma que las variables aleatorias *X* y *Y* **no** están correl
 
 ![formula](https://render.githubusercontent.com/render/math?math=C_{X,Y}=R_{XY}-E[X]\cdot\E[Y])
 
-![formula](https://render.githubusercontent.com/render/math?math=\rho=\frac{C_{XY}}{\sigma_x\xcdot\sigma_y})
+![formula](https://render.githubusercontent.com/render/math?math=\rho=\frac{C_{XY}}{\sigma_x\cdot\sigma_y})
 
 respectivamente. 
 
 &nbsp;&nbsp;&nbsp;&nbsp; Además, se sabe que ![formula](https://render.githubusercontent.com/render/math?math=E[X]=\mu_x) y ![formula](https://render.githubusercontent.com/render/math?math=E[Y]=\mu_y), es posible reescribir la ecuación planteada inicialmente para la covarianza, teniendo:
 
-![formula](https://render.githubusercontent.com/render/math?math=C_{X,Y}=R_{XY}-\mu_x\cdot\\mu_y)
+![formula](https://render.githubusercontent.com/render/math?math=C_{X,Y}=R_{XY}-\mu_x\cdot\mu_y)
 
 &nbsp;&nbsp;&nbsp;&nbsp; Esta operación se realiza en **Python**, utilizando los valores de cada variable encontrados anteriormente, obteniendo:
 
@@ -74,7 +74,7 @@ respectivamente.
 
 ![formula](https://render.githubusercontent.com/render/math?math=\rho=-0.008299655130846177)
 
-siendo éstos valore bastante cercanos al 0 ideal plantenado de acuerdo a la naturaleza no correlativa de las variables aleatorias analizadas. Este error puede deberse a errores decimales en los cálculos realizados mediente **Python**, que incluso pueden ser arrastrados desde el cálculo de los parámetros de las funciones de densidad marginales en el inciso a), afectando el resultado final de este inciso. 
+siendo éstos valores bastante cercanos al 0 ideal plantenado de acuerdo a la naturaleza no correlativa de las variables aleatorias analizadas. Este error puede deberse a errores decimales en los cálculos realizados mediente **Python**, que incluso pueden ser arrastrados desde el cálculo de los parámetros de las funciones de densidad marginales en el inciso a), afectando el resultado final de este inciso. 
 
 #### Inciso d):
 
